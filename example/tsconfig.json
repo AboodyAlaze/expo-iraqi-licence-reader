@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-iraqi-licence-reader": ["../src/index"],
+      "expo-iraqi-licence-reader/*": ["../src/*"]
+    }
+  }
+}

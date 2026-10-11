@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Licence Reader Example",
+    "slug": "expo-iraqi-licence-reader-example",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-iraqi-licence-reader",
+        { "cameraPermission": "لمسح إجازة السياقة. الصور تُعالج على الجهاز ولا تُرفع لأي مكان." }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.fullship.iraqilicencereader.example",
+      "appleTeamId": "28WN5DTH9W"
+    },
+    "android": {
+      "package": "expo.modules.iraqilicencereader.example",
+      "predictiveBackGestureEnabled": false
+    }
+  }
+}

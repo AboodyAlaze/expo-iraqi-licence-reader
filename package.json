@@ -1,0 +1,60 @@
+{
+  "name": "expo-iraqi-licence-reader",
+  "version": "0.1.0",
+  "workspaces": [
+    "example"
+  ],
+  "description": "Scan Iraqi driving licences (federal and Kurdistan Region) with the camera — MRZ, front fields and per-class dates, fully on-device",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "plugin/build",
+    "app.plugin.js",
+    "android",
+    "ios",
+    "expo-module.config.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && tsc --project plugin",
+    "clean": "node internal/module_scripts/clean.js",
+    "prepare": "node internal/module_scripts/prepare.js",
+    "start": "cd example && expo start --dev-client",
+    "android": "cd example && expo run:android --device",
+    "ios": "cd example && expo run:ios --device",
+    "open:ios": "node internal/module_scripts/open-ios.js",
+    "open:android": "node internal/module_scripts/open-android.js"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "iraq",
+    "driving-licence",
+    "driving-license",
+    "ocr",
+    "mrz",
+    "icao-9303"
+  ],
+  "repository": "https://github.com/aboodyAlaze/expo-iraqi-licence-reader",
+  "bugs": {
+    "url": "https://github.com/aboodyAlaze/expo-iraqi-licence-reader/issues"
+  },
+  "author": "AboodyAlaze <abdullrahmanalaa@gmail.com> (https://github.com/aboodyAlaze)",
+  "license": "MIT",
+  "homepage": "https://github.com/aboodyAlaze/expo-iraqi-licence-reader#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@types/react": "~19.1.1",
+    "expo": "~57.0.15",
+    "react-native": "0.86.2",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}
