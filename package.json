@@ -37,7 +37,10 @@
     "mrz",
     "icao-9303"
   ],
-  "repository": "https://github.com/aboodyAlaze/expo-iraqi-licence-reader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aboodyAlaze/expo-iraqi-licence-reader.git"
+  },
   "bugs": {
     "url": "https://github.com/aboodyAlaze/expo-iraqi-licence-reader/issues"
   },
